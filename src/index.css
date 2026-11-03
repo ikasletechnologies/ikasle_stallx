@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --color-navy-950: #081629;
+  --color-navy-900: #0e2440;
+  --color-navy-800: #142f52;
+  --color-navy-700: #1d3d66;
+  --color-navy-600: #2a4f7e;
+
+  --color-brand-50: #fff4ec;
+  --color-brand-100: #ffe6d4;
+  --color-brand-200: #fccaa6;
+  --color-brand-300: #f9a771;
+  --color-brand-400: #f88a43;
+  --color-brand-500: #f37021;
+  --color-brand-600: #e05d10;
+  --color-brand-700: #b9480c;
+
+  --color-cream-50: #fdfaf6;
+  --color-cream-100: #fbf7f1;
+  --color-cream-200: #f4ece1;
+  --color-cream-300: #ecdfcf;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-cream-100);
+    color: var(--color-navy-900);
+    font-family: var(--font-sans);
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background-color: var(--color-brand-500);
+    color: #ffffff;
+  }
+}
+
+@theme {
+  --animate-slide-up-in: slide-up-in 0.5s cubic-bezier(0.22, 0.8, 0.24, 1) both;
+  --animate-slide-down-in: slide-down-in 0.5s cubic-bezier(0.22, 0.8, 0.24, 1) both;
+
+  @keyframes slide-up-in {
+    from {
+      opacity: 0;
+      transform: translateY(28px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-down-in {
+    from {
+      opacity: 0;
+      transform: translateY(-28px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-slide-up-in,
+  .animate-slide-down-in {
+    animation: none;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Scroll reveal
+   Mark an element with data-reveal="<name>" (animates itself) or
+   data-reveal-stagger="<name>" (animates its children one by one).
+   Hidden states only apply once useScrollReveal() arms the page, so
+   content stays visible without JS or with reduced motion.
+   ------------------------------------------------------------------ */
+.reveal-armed [data-reveal]:not(.is-revealed),
+.reveal-armed [data-reveal-stagger]:not(.is-revealed) > * {
+  opacity: 0;
+}
+
+[data-reveal].is-revealed {
+  animation: var(--reveal-anim, reveal-fade-up) var(--reveal-duration, 0.9s) var(--reveal-ease, cubic-bezier(0.22, 0.8, 0.24, 1))
+    var(--reveal-delay, 0ms) backwards;
+}
+
+[data-reveal-stagger].is-revealed > * {
+  animation: var(--reveal-anim, reveal-fade-up) var(--reveal-duration, 0.8s) var(--reveal-ease, cubic-bezier(0.22, 0.8, 0.24, 1))
+    calc(var(--reveal-delay, 0ms) + var(--i, 0) * var(--reveal-step, 90ms)) backwards;
+}
+
+[data-reveal-stagger] > :nth-child(2) { --i: 1; }
+[data-reveal-stagger] > :nth-child(3) { --i: 2; }
+[data-reveal-stagger] > :nth-child(4) { --i: 3; }
+[data-reveal-stagger] > :nth-child(5) { --i: 4; }
+[data-reveal-stagger] > :nth-child(6) { --i: 5; }
+[data-reveal-stagger] > :nth-child(7) { --i: 6; }
+[data-reveal-stagger] > :nth-child(8) { --i: 7; }
+[data-reveal-stagger] > :nth-child(9) { --i: 8; }
+[data-reveal-stagger] > :nth-child(10) { --i: 9; }
+[data-reveal-stagger] > :nth-child(11) { --i: 10; }
+[data-reveal-stagger] > :nth-child(12) { --i: 11; }
+
+[data-reveal='fade-up'], [data-reveal-stagger='fade-up'] > * { --reveal-anim: reveal-fade-up; }
+[data-reveal='slide-right'], [data-reveal-stagger='slide-right'] > * { --reveal-anim: reveal-slide-right; }
+[data-reveal='slide-left'], [data-reveal-stagger='slide-left'] > * { --reveal-anim: reveal-slide-left; }
+[data-reveal='zoom-tilt'] { --reveal-anim: reveal-zoom-tilt; --reveal-duration: 1.1s; }
+[data-reveal-stagger='mask-up'] > * { --reveal-anim: reveal-mask-up; --reveal-step: 120ms; }
+[data-reveal='pop'] { --reveal-anim: reveal-pop; --reveal-duration: 0.8s; --reveal-ease: cubic-bezier(0.34, 1.56, 0.64, 1); }
+[data-reveal='wipe'] { --reveal-anim: reveal-wipe; --reveal-duration: 1.2s; --reveal-ease: cubic-bezier(0.77, 0, 0.18, 1); }
+[data-reveal='unfold'] { --reveal-anim: reveal-unfold; --reveal-duration: 1s; --reveal-ease: cubic-bezier(0.77, 0, 0.18, 1); }
+[data-reveal='blur-in'] { --reveal-anim: reveal-blur-in; }
+[data-reveal-stagger='flip-up'] > * { --reveal-anim: reveal-flip-up; --reveal-step: 110ms; transform-origin: 50% 100%; }
+[data-reveal='swing'] { --reveal-anim: reveal-swing; transform-origin: 0 50%; }
+[data-reveal='rise-tilt'] { --reveal-anim: reveal-rise-tilt; --reveal-duration: 1s; }
+[data-reveal-stagger='drop'] > * { --reveal-anim: reveal-drop; --reveal-step: 60ms; --reveal-duration: 0.6s; transform-origin: 50% 0; }
+[data-reveal='rise-scale'] { --reveal-anim: reveal-rise-scale; --reveal-duration: 1s; }
+[data-reveal-stagger='slide-left'] > * { --reveal-step: 55ms; --reveal-duration: 0.6s; }
+
+@keyframes reveal-fade-up {
+  from { opacity: 0; transform: translateY(40px); }
+}
+@keyframes reveal-slide-right {
+  from { opacity: 0; transform: translateX(-56px); }
+}
+@keyframes reveal-slide-left {
+  from { opacity: 0; transform: translateX(56px); }
+}
+@keyframes reveal-zoom-tilt {
+  from { opacity: 0; transform: translateY(40px) scale(0.84) rotate(-5deg); filter: blur(10px); }
+}
+@keyframes reveal-mask-up {
+  from { opacity: 1; transform: translateY(24px); clip-path: inset(0 0 100% 0); }
+  to { clip-path: inset(-20% -20% -20% -20%); }
+}
+@keyframes reveal-pop {
+  0% { opacity: 0; transform: scale(0.3); }
+  60% { opacity: 1; }
+}
+@keyframes reveal-wipe {
+  from { opacity: 1; clip-path: inset(0 0 0 100%); }
+  to { clip-path: inset(0 0 0 0); }
+}
+@keyframes reveal-unfold {
+  from { opacity: 1; clip-path: inset(0 50% 0 50% round 12px); }
+  to { clip-path: inset(-40px -40px -40px -40px round 12px); }
+}
+@keyframes reveal-blur-in {
+  from { opacity: 0; filter: blur(14px); transform: scale(1.06); }
+}
+@keyframes reveal-flip-up {
+  from { opacity: 0; transform: perspective(900px) rotateX(75deg); }
+}
+@keyframes reveal-swing {
+  from { opacity: 0; transform: perspective(1000px) rotateY(-35deg) translateX(-20px); }
+}
+@keyframes reveal-rise-tilt {
+  from { opacity: 0; transform: translateY(70px) rotate(3deg); }
+}
+@keyframes reveal-drop {
+  from { opacity: 0; transform: translateY(-18px) scaleY(0.85); }
+}
+@keyframes reveal-rise-scale {
+  from { opacity: 0; transform: translateY(60px) scale(0.94); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal].is-revealed,
+  [data-reveal-stagger].is-revealed > * {
+    animation: none;
+  }
+}

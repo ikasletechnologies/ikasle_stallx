@@ -1,0 +1,258 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Ikaslé StallX home" [ref=e6] [cursor=pointer]:
+        - /url: /#home
+        - img "Ikaslé StallX" [ref=e7]
+      - navigation "Main navigation" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /#home
+        - link "About" [ref=e10] [cursor=pointer]:
+          - /url: /#about
+        - button "Services" [ref=e12]
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /#contact
+      - link "Request a Quote" [ref=e16] [cursor=pointer]:
+        - /url: /#contact
+  - generic [ref=e20]:
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]: Vite + React 19 Next-Gen Stall Platform
+        - heading "Engineered for Unrivaled Expo Presence." [level=1] [ref=e29]
+        - paragraph [ref=e30]: Transform ordinary trade fair booths into high-converting brand landmarks. From 3D architectural ideation to precision on-ground fabrication and dismantling.
+        - generic [ref=e31]:
+          - button "Explore Stall Modules" [ref=e32]
+          - button "View Specifications" [ref=e36]
+        - generic [ref=e37]:
+          - generic [ref=e38]: Bespoke 3D Blueprints
+          - generic [ref=e42]: Structural Fire & Safety Certs
+          - generic [ref=e46]: Turnkey Assembly
+      - generic [ref=e51]:
+        - generic [ref=e52]: Live Blueprint CAD
+        - generic [ref=e63]:
+          - heading "Stall 3D Engine Ready" [level=3] [ref=e64]
+          - paragraph [ref=e65]: 12m x 9m Multi-tier modular system with integrated LED ribbon and mezzanine lounge.
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - generic [ref=e68]: "Footprint:"
+            - strong [ref=e69]: 108 sq. meters
+          - generic [ref=e70]:
+            - generic [ref=e71]: "Turnaround:"
+            - strong [ref=e72]: 48 Hrs Fast-Track
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - paragraph [ref=e77]: Stalls Fabricated
+          - paragraph [ref=e78]: 250+
+        - generic [ref=e79]: +18% YoY
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - paragraph [ref=e85]: On-time Handover
+          - paragraph [ref=e86]: 99.4%
+        - generic [ref=e87]: Zero Delays
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - paragraph [ref=e93]: Exposition Hubs
+          - paragraph [ref=e94]: 35+ Cities
+        - generic [ref=e95]: Global Coverage
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - paragraph [ref=e101]: Brand Impact Score
+          - paragraph [ref=e102]: 4.9 / 5
+        - generic [ref=e103]: Top Rated
+    - generic [ref=e107]:
+      - generic [ref=e108]:
+        - heading "Modular Capabilities" [level=2] [ref=e109]
+        - paragraph [ref=e110]: Everything your expo deployment needs
+        - paragraph [ref=e111]: From initial sketch to handover in prime exhibition centers worldwide.
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - heading "Modular Frameworks" [level=3] [ref=e119]
+          - paragraph [ref=e120]: Precision extruded aluminum systems engineered for rapid assembly, reconfiguration, and zero-waste reusability across multiple expos.
+        - generic [ref=e121]:
+          - heading "Digital & AV Integration" [level=3] [ref=e126]
+          - paragraph [ref=e127]: Flush seamless LED videowalls, interactive kiosks, ambient smart lighting grids, and integrated visitor tracking telemetry.
+        - generic [ref=e128]:
+          - heading "Turnkey Fabrication" [level=3] [ref=e132]
+          - paragraph [ref=e133]: In-house carpentry, CNC routing, spray painting, custom acrylics, electrical distribution, and certified fire-retardant finishes.
+    - generic [ref=e134]:
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - heading "Active Portfolio" [level=2] [ref=e137]
+          - paragraph [ref=e138]: Stall Architecture Showcase
+        - generic [ref=e139]:
+          - button "All" [ref=e142]
+          - button "Tech & SaaS" [ref=e143]
+          - button "Industrial" [ref=e144]
+          - button "Automotive" [ref=e145]
+          - button "Luxury & Retail" [ref=e146]
+      - generic [ref=e147]:
+        - generic [ref=e148]:
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - generic [ref=e151]: Tech & SaaS
+              - generic [ref=e152]: Completed
+            - heading "Aura AI - Innovation Pavilion" [level=3] [ref=e153]
+            - generic [ref=e154]:
+              - generic [ref=e159]:
+                - text: "Dimensions:"
+                - strong [ref=e160]: 12m x 9m (Two-tier)
+              - generic [ref=e161]: Venue Ready System
+          - generic [ref=e166]:
+            - generic [ref=e167]: "ID #0001"
+            - button "Inspect Layout" [ref=e168]
+        - generic [ref=e172]:
+          - generic [ref=e173]:
+            - generic [ref=e174]:
+              - generic [ref=e175]: Industrial
+              - generic [ref=e176]: Completed
+            - heading "Apex Robotics Expo Dome" [level=3] [ref=e177]
+            - generic [ref=e178]:
+              - generic [ref=e183]:
+                - text: "Dimensions:"
+                - strong [ref=e184]: 15m x 10m Island
+              - generic [ref=e185]: Venue Ready System
+          - generic [ref=e190]:
+            - generic [ref=e191]: "ID #0002"
+            - button "Inspect Layout" [ref=e192]
+        - generic [ref=e196]:
+          - generic [ref=e197]:
+            - generic [ref=e198]:
+              - generic [ref=e199]: Automotive
+              - generic [ref=e200]: In Progress
+            - heading "Veloce Hypercar Concept Pod" [level=3] [ref=e201]
+            - generic [ref=e202]:
+              - generic [ref=e207]:
+                - text: "Dimensions:"
+                - strong [ref=e208]: 18m x 12m Quad-Open
+              - generic [ref=e209]: Venue Ready System
+          - generic [ref=e214]:
+            - generic [ref=e215]: "ID #0003"
+            - button "Inspect Layout" [ref=e216]
+        - generic [ref=e220]:
+          - generic [ref=e221]:
+            - generic [ref=e222]:
+              - generic [ref=e223]: Luxury & Retail
+              - generic [ref=e224]: Concept
+            - heading "Lumina High-Jewelry Lounge" [level=3] [ref=e225]
+            - generic [ref=e226]:
+              - generic [ref=e231]:
+                - text: "Dimensions:"
+                - strong [ref=e232]: 9m x 6m Enclosed
+              - generic [ref=e233]: Venue Ready System
+          - generic [ref=e238]:
+            - generic [ref=e239]: "ID #0004"
+            - button "Inspect Layout" [ref=e240]
+        - generic [ref=e244]:
+          - generic [ref=e245]:
+            - generic [ref=e246]:
+              - generic [ref=e247]: Tech & SaaS
+              - generic [ref=e248]: Completed
+            - heading "Nexus Cloud Enterprise Hub" [level=3] [ref=e249]
+            - generic [ref=e250]:
+              - generic [ref=e255]:
+                - text: "Dimensions:"
+                - strong [ref=e256]: 10m x 8m Corner
+              - generic [ref=e257]: Venue Ready System
+          - generic [ref=e262]:
+            - generic [ref=e263]: "ID #0005"
+            - button "Inspect Layout" [ref=e264]
+        - generic [ref=e268]:
+          - generic [ref=e269]:
+            - generic [ref=e270]:
+              - generic [ref=e271]: Automotive
+              - generic [ref=e272]: In Progress
+            - heading "EcoDrive Mobility Station" [level=3] [ref=e273]
+            - generic [ref=e274]:
+              - generic [ref=e279]:
+                - text: "Dimensions:"
+                - strong [ref=e280]: 14m x 8m Walk-through
+              - generic [ref=e281]: Venue Ready System
+          - generic [ref=e286]:
+            - generic [ref=e287]: "ID #0006"
+            - button "Inspect Layout" [ref=e288]
+    - generic [ref=e294]:
+      - heading "Ready to Book Your Next Exhibition Stall?" [level=3] [ref=e295]
+      - paragraph [ref=e296]: Connect directly with our stall architects to reserve slots, configure custom 3D layouts, and receive an instant structural estimate.
+      - generic [ref=e297]:
+        - button "Schedule Consultation" [ref=e298]
+        - button "Download Catalog" [ref=e302]
+  - contentinfo [ref=e303]:
+    - generic [ref=e304]:
+      - generic [ref=e305]:
+        - generic [ref=e306]:
+          - link "Ikaslé StallX home" [ref=e307] [cursor=pointer]:
+            - /url: /#home
+            - img "Ikaslé StallX" [ref=e308]
+          - paragraph [ref=e309]: Exhibition stalls. Memorable brand experiences.
+          - generic [ref=e310]:
+            - link "Instagram" [ref=e311] [cursor=pointer]:
+              - /url: https://www.instagram.com/
+            - link "LinkedIn" [ref=e316] [cursor=pointer]:
+              - /url: https://www.linkedin.com/
+            - link "YouTube" [ref=e319] [cursor=pointer]:
+              - /url: https://www.youtube.com/
+            - link "Facebook" [ref=e322] [cursor=pointer]:
+              - /url: https://www.facebook.com/
+        - generic [ref=e325]:
+          - heading "Explore" [level=2] [ref=e326]
+          - navigation "Footer navigation" [ref=e327]:
+            - list [ref=e328]:
+              - listitem [ref=e329]:
+                - link "Home" [ref=e330] [cursor=pointer]:
+                  - /url: /#home
+              - listitem [ref=e331]:
+                - link "About" [ref=e332] [cursor=pointer]:
+                  - /url: /#about
+              - listitem [ref=e333]:
+                - link "Services" [ref=e334] [cursor=pointer]:
+                  - /url: /#services
+              - listitem [ref=e335]:
+                - link "Contact" [ref=e336] [cursor=pointer]:
+                  - /url: /#contact
+        - generic [ref=e337]:
+          - heading "Our services" [level=2] [ref=e338]
+          - list [ref=e339]:
+            - listitem [ref=e340]:
+              - link "Exhibition Stalls" [ref=e341] [cursor=pointer]:
+                - /url: /#exhibition-stalls
+            - listitem [ref=e344]:
+              - link "Event Setups" [ref=e345] [cursor=pointer]:
+                - /url: /#event-setups
+            - listitem [ref=e348]:
+              - link "Custom Designs" [ref=e349] [cursor=pointer]:
+                - /url: /#custom-designs
+            - listitem [ref=e352]:
+              - link "Brand Experiences" [ref=e353] [cursor=pointer]:
+                - /url: /#brand-experiences
+        - generic [ref=e356]:
+          - heading "Get in touch" [level=2] [ref=e357]
+          - generic [ref=e358]:
+            - link "business@ikasle.in" [ref=e359] [cursor=pointer]:
+              - /url: mailto:business@ikasle.in
+            - link "+91 78451 32962" [ref=e363] [cursor=pointer]:
+              - /url: tel:+917845132962
+            - link "+91 96263 64551" [ref=e366] [cursor=pointer]:
+              - /url: tel:+919626364551
+            - generic [ref=e369]: 1639/A, 2nd Floor, Hopes,Coimbatore, India – 641004
+          - link "Chat with StallX on WhatsApp (+91 78451 32962)" [ref=e374] [cursor=pointer]:
+            - /url: https://wa.me/917845132962?text=Hello%20Ikasl%C3%A9%20StallX%2C%20I%20would%20like%20to%20plan%20an%20exhibition%20stall.
+            - text: Chat on WhatsApp
+      - generic [ref=e379]:
+        - paragraph [ref=e380]: © 2026 Ikaslé StallX. All rights reserved.
+        - navigation "Legal navigation" [ref=e381]:
+          - link "Privacy Policy" [ref=e382] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "FAQ" [ref=e383] [cursor=pointer]:
+            - /url: /faq
+          - link "Terms & Conditions" [ref=e384] [cursor=pointer]:
+            - /url: /terms-and-conditions
+  - generic [aria-hidden]:
+    - button:
+      - generic: Scroll to top
+  - complementary "Floating quick actions" [ref=e385]:
+    - button "Toggle StallX AI Assistant" [ref=e387]:
+      - generic [ref=e393]: StallX AI Agent
+    - link "Chat with StallX on WhatsApp (+91 78451 32962)" [ref=e394] [cursor=pointer]:
+      - /url: https://wa.me/917845132962?text=Hello%20Ikasl%C3%A9%20StallX%2C%20I%20would%20like%20to%20plan%20an%20exhibition%20stall.
+      - generic [ref=e398]: Chat on WhatsApp

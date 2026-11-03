@@ -1,0 +1,8 @@
+export { HeroSection } from './HeroSection'
+export { AboutSection } from './AboutSection'
+export { ServicesSection } from './ServicesSection'
+export { CustomSolutionsBanner } from './CustomSolutionsBanner'
+export { GroupCompaniesSection } from './GroupCompaniesSection'
+export { TestimonialsSection } from './TestimonialsSection'
+export { FaqSection } from './FaqSection'
+export { ContactSection } from './ContactSection'

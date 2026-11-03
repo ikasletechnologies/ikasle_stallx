@@ -1,0 +1,431 @@
+- generic [ref=e3]:
+  - generic "Loading Ikasle StallX..." [ref=e4]:
+    - generic [ref=e5]:
+      - img "Ikasle StallX Favicon" [ref=e10]
+      - heading "Ikaslé StallX" [level=1] [ref=e11]
+      - paragraph [ref=e12]: Exhibition & Stall Architecture
+      - generic [ref=e15]: Loading Expo Platform... 12%
+  - banner [ref=e16]:
+    - generic [ref=e17]:
+      - link "Ikaslé StallX home" [ref=e18] [cursor=pointer]:
+        - /url: /#home
+        - img "Ikaslé StallX" [ref=e19]
+      - navigation "Main navigation" [ref=e20]:
+        - link "Home" [ref=e21] [cursor=pointer]:
+          - /url: /#home
+        - link "About" [ref=e22] [cursor=pointer]:
+          - /url: /#about
+        - button "Services" [ref=e24]
+        - link "Contact" [ref=e27] [cursor=pointer]:
+          - /url: /#contact
+      - link "Request a Quote" [ref=e28] [cursor=pointer]:
+        - /url: /#contact
+  - generic [ref=e32]:
+    - generic [ref=e33]:
+      - generic: ×
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]: Exhibition experiences 2026
+          - heading "Big ideas. Bold spaces." [level=1] [ref=e41]: Big ideas.Bold spaces.
+          - paragraph [ref=e42]: Custom exhibition stalls and immersive brand environments designed to turn every interaction into a lasting impression.
+          - generic [ref=e43]:
+            - generic [ref=e44]: Custom-built
+            - generic [ref=e47]: Turnkey delivery
+            - generic [ref=e50]: Brand focused
+          - generic [ref=e53]:
+            - link "Plan your expo" [ref=e54] [cursor=pointer]:
+              - /url: "#contact"
+            - link "View services" [ref=e57] [cursor=pointer]:
+              - /url: "#services"
+        - generic [ref=e58]:
+          - region "StallX services showcase" [ref=e60]:
+            - generic:
+              - generic [ref=e63]:
+                - generic [ref=e64]:
+                  - generic [ref=e71]:
+                    - strong [ref=e72]: From space to experience
+                    - generic [ref=e73]: Empty floor plans turned into branded worlds
+                  - generic [ref=e74]: 01 / 05
+                - img "An empty exhibition floor plan transformed into a lit, branded StallX booth with visitors" [ref=e77]:
+                  - generic [ref=e78]: 6 m
+                  - generic [ref=e161]: THE SPACE
+                  - generic [ref=e162]: THE EXPERIENCE
+              - generic [ref=e166] [cursor=pointer]:
+                - generic [ref=e167]:
+                  - generic [ref=e173]:
+                    - strong [ref=e174]: Exhibition Stalls
+                    - generic [ref=e175]: Custom booths, modular stalls and fabrication
+                  - generic [ref=e176]: 02 / 05
+                - img "Exhibition stall illustration" [ref=e179]:
+                  - generic [ref=e189]: YOUR BRAND
+              - generic [ref=e223] [cursor=pointer]:
+                - generic [ref=e224]:
+                  - generic [ref=e238]:
+                    - strong [ref=e239]: Event Setups
+                    - generic [ref=e240]: Corporate events, launches and promotional spaces
+                  - generic [ref=e241]: 03 / 05
+                - img "Event stage setup illustration" [ref=e244]:
+                  - generic [ref=e259]: LAUNCH
+              - generic [ref=e296] [cursor=pointer]:
+                - generic [ref=e297]:
+                  - generic [ref=e302]:
+                    - strong [ref=e303]: Custom Designs
+                    - generic [ref=e304]: 3D visualisation, layouts and display units
+                  - generic [ref=e305]: 04 / 05
+                - img "Custom stall design blueprint illustration" [ref=e308]:
+                  - generic [ref=e320]: 3 m
+                  - generic [ref=e321]: 4 m
+                  - generic [ref=e322]: 2.5 m
+              - generic [ref=e350] [cursor=pointer]:
+                - generic [ref=e351]:
+                  - generic [ref=e357]:
+                    - strong [ref=e358]: Brand Experiences
+                    - generic [ref=e359]: Interactive zones, demos and visitor engagement
+                  - generic [ref=e360]: 05 / 05
+                - img "Interactive brand experience illustration" [ref=e363]:
+                  - generic [ref=e389]: "+1"
+          - paragraph [ref=e393]: Drag, click or use arrow keys to explore
+    - generic [ref=e400]:
+      - generic [ref=e402]:
+        - paragraph [ref=e403]: About StallX
+        - heading "7 years of turning spaces into experiences." [level=2] [ref=e404]: 7 years ofturning spacesinto experiences.
+        - paragraph [ref=e405]: Ikaslé StallX creates custom expo stalls and event environments that bring your brand to life.
+      - generic [ref=e408]:
+        - generic [ref=e409]: "7"
+        - paragraph [ref=e410]: Years ofexperience
+      - img "An empty exhibition floor plan transformed into a lit, branded StallX booth with visitors" [ref=e412]:
+        - generic [ref=e413]: 6 m
+        - generic [ref=e496]: THE SPACE
+        - generic [ref=e497]: THE EXPERIENCE
+    - generic [ref=e500]:
+      - generic [ref=e501]:
+        - paragraph [ref=e503]: Our services
+        - heading "Spaces designed around your brand." [level=2] [ref=e505]
+        - paragraph [ref=e506]: Hover over a service topic or tap it to explore everything included.
+      - generic [ref=e507]:
+        - article [ref=e508]:
+          - generic [ref=e509]:
+            - img "Exhibition stall illustration" [ref=e511]:
+              - generic [ref=e521]: YOUR BRAND
+            - generic [ref=e557]:
+              - heading "Exhibition Stalls" [level=3] [ref=e558]
+              - paragraph [ref=e559]: Impactful, functional expo stalls that showcase your brand.
+              - link "Discuss this service" [ref=e560] [cursor=pointer]:
+                - /url: "#contact"
+            - generic [ref=e564]:
+              - group [ref=e565]:
+                - generic "Custom Exhibition Booths" [ref=e566] [cursor=pointer]
+              - group [ref=e572]:
+                - generic "Modular Stall Designs" [ref=e573] [cursor=pointer]
+              - group [ref=e579]:
+                - generic "Product Display Areas" [ref=e580] [cursor=pointer]
+              - group [ref=e586]:
+                - generic "Stall Fabrication" [ref=e587] [cursor=pointer]
+        - article [ref=e593]:
+          - generic [ref=e594]:
+            - img "Event stage setup illustration" [ref=e596]:
+              - generic [ref=e611]: LAUNCH
+            - generic [ref=e653]:
+              - heading "Event Setups" [level=3] [ref=e654]
+              - paragraph [ref=e655]: End-to-end event setups for brand showcases, launches and corporate events.
+              - link "Discuss this service" [ref=e656] [cursor=pointer]:
+                - /url: "#contact"
+            - generic [ref=e660]:
+              - group [ref=e661]:
+                - generic "Corporate Events" [ref=e662] [cursor=pointer]
+              - group [ref=e668]:
+                - generic "Product Launches" [ref=e669] [cursor=pointer]
+              - group [ref=e675]:
+                - generic "Stage & Backdrop Designs" [ref=e676] [cursor=pointer]
+              - group [ref=e682]:
+                - generic "Promotional Spaces" [ref=e683] [cursor=pointer]
+        - article [ref=e689]:
+          - generic [ref=e690]:
+            - img "Custom stall design blueprint illustration" [ref=e692]:
+              - generic [ref=e703]: 3 m
+              - generic [ref=e704]: 4 m
+              - generic [ref=e705]: 2.5 m
+            - generic [ref=e736]:
+              - heading "Custom Designs" [level=3] [ref=e737]
+              - paragraph [ref=e738]: Tailor-made stall designs that fit your brand, space and event goals.
+              - link "Discuss this service" [ref=e739] [cursor=pointer]:
+                - /url: "#contact"
+            - generic [ref=e743]:
+              - group [ref=e744]:
+                - generic "3D Stall Visualisation" [ref=e745] [cursor=pointer]
+              - group [ref=e751]:
+                - generic "Space Planning & Layouts" [ref=e752] [cursor=pointer]
+              - group [ref=e758]:
+                - generic "Custom Display Units" [ref=e759] [cursor=pointer]
+              - group [ref=e765]:
+                - generic "Brand-Themed Interiors" [ref=e766] [cursor=pointer]
+        - article [ref=e772]:
+          - generic [ref=e773]:
+            - img "Interactive brand experience illustration" [ref=e775]:
+              - generic [ref=e801]: "+1"
+            - generic [ref=e811]:
+              - heading "Brand Experiences" [level=3] [ref=e812]
+              - paragraph [ref=e813]: Immersive environments that drive interaction, engagement and recall.
+              - link "Discuss this service" [ref=e814] [cursor=pointer]:
+                - /url: "#contact"
+            - generic [ref=e818]:
+              - group [ref=e819]:
+                - generic "Interactive Brand Zones" [ref=e820] [cursor=pointer]
+              - group [ref=e826]:
+                - generic "Product Demo Spaces" [ref=e827] [cursor=pointer]
+              - group [ref=e833]:
+                - generic "Visitor Engagement Areas" [ref=e834] [cursor=pointer]
+              - group [ref=e840]:
+                - generic "Branded Photo Zones" [ref=e841] [cursor=pointer]
+    - region "Custom solutions" [ref=e847]:
+      - link "And more Your ideas. More possibilities. Have something different in mind? Let's explore a custom solution for your brand." [ref=e848] [cursor=pointer]:
+        - /url: "#contact"
+        - generic [ref=e849]: And more
+        - generic [ref=e852]:
+          - heading "Your ideas. More possibilities." [level=3] [ref=e853]
+          - paragraph [ref=e854]: Have something different in mind? Let's explore a custom solution for your brand.
+    - region [ref=e858]:
+      - generic [ref=e859]:
+        - generic [ref=e860]:
+          - generic [ref=e861]:
+            - paragraph [ref=e863]: Our group companies
+            - heading "One group. Multiple possibilities." [level=2] [ref=e865]
+          - generic [ref=e866]:
+            - button "Previous companies" [ref=e867]
+            - button "Next companies" [ref=e870]
+        - region "Group companies" [ref=e873]:
+          - generic [ref=e874]:
+            - 'article "1 of 6: Company one" [ref=e875]':
+              - paragraph [ref=e881]: Company logo
+              - heading "Company one" [level=3] [ref=e882]
+              - link "Visit Company one website" [ref=e883] [cursor=pointer]:
+                - /url: "#contact"
+                - text: Visit website
+            - 'article "2 of 6: Company two" [ref=e888]':
+              - paragraph [ref=e894]: Company logo
+              - heading "Company two" [level=3] [ref=e895]
+              - link "Visit Company two website" [ref=e896] [cursor=pointer]:
+                - /url: "#contact"
+                - text: Visit website
+            - 'article "3 of 6: Company three" [ref=e901]':
+              - paragraph [ref=e907]: Company logo
+              - heading "Company three" [level=3] [ref=e908]
+              - link "Visit Company three website" [ref=e909] [cursor=pointer]:
+                - /url: "#contact"
+                - text: Visit website
+            - 'article "4 of 6: Company four" [ref=e914]':
+              - paragraph [ref=e920]: Company logo
+              - heading "Company four" [level=3] [ref=e921]
+              - link "Visit Company four website" [ref=e922] [cursor=pointer]:
+                - /url: "#contact"
+                - text: Visit website
+            - 'article "5 of 6: Company five" [ref=e927]':
+              - paragraph [ref=e933]: Company logo
+              - heading "Company five" [level=3] [ref=e934]
+              - link "Visit Company five website" [ref=e935] [cursor=pointer]:
+                - /url: "#contact"
+                - text: Visit website
+            - 'article "6 of 6: Company six" [ref=e940]':
+              - paragraph [ref=e946]: Company logo
+              - heading "Company six" [level=3] [ref=e947]
+              - link "Visit Company six website" [ref=e948] [cursor=pointer]:
+                - /url: "#contact"
+                - text: Visit website
+          - generic [ref=e953]:
+            - button "Go to slide 1" [ref=e954]
+            - button "Go to slide 2" [ref=e955]
+            - button "Go to slide 3" [ref=e956]
+            - button "Go to slide 4" [ref=e957]
+    - region [ref=e958]:
+      - generic [ref=e959]:
+        - generic [ref=e960]:
+          - paragraph [ref=e962]: Happy clients
+          - heading [level=2] [ref=e965]:
+            - text: Happy Clients.
+            - generic [ref=e966]: Real Results.
+          - link "Read More Reviews" [ref=e972] [cursor=pointer]:
+            - /url: "#contact"
+        - generic [ref=e975]:
+          - figure "CN Client Name Marketing Head, Company Rated 5 out of 5" [ref=e976]:
+            - blockquote [ref=e979]: StallX completely transformed our expo presence. The stall looked stunning and pulled in visitors all three days!
+            - generic [ref=e980]:
+              - generic [ref=e981]: CN
+              - generic [ref=e982]:
+                - strong [ref=e983]: Client Name
+                - generic [ref=e984]: Marketing Head, Company
+                - generic "Rated 5 out of 5" [ref=e985]
+          - figure "CN Client Name Founder, Company Rated 5 out of 5" [ref=e996]:
+            - blockquote [ref=e999]: Professional, creative and on time. From the 3D design to on-site setup, everything was handled end to end.
+            - generic [ref=e1000]:
+              - generic [ref=e1001]: CN
+              - generic [ref=e1002]:
+                - strong [ref=e1003]: Client Name
+                - generic [ref=e1004]: Founder, Company
+                - generic "Rated 5 out of 5" [ref=e1005]
+        - generic [ref=e1016]:
+          - button "Previous testimonial" [ref=e1017]
+          - button "Next testimonial" [ref=e1020]
+    - region [ref=e1023]:
+      - generic [ref=e1024]:
+        - generic [ref=e1025]:
+          - paragraph [ref=e1027]: FAQ
+          - heading "Your expo questions, answered." [level=2] [ref=e1029]
+        - generic [ref=e1030]:
+          - group [ref=e1031]:
+            - generic "How early should I enquire?" [ref=e1032] [cursor=pointer]
+            - generic [ref=e1036]: Share your event date and requirements as early as possible so we can plan the design, approvals, fabrication and production schedule.
+          - group [ref=e1037]:
+            - generic "Can you design for my stall dimensions?" [ref=e1038] [cursor=pointer]
+          - group [ref=e1042]:
+            - generic "What should I include in my brief?" [ref=e1043] [cursor=pointer]
+          - group [ref=e1047]:
+            - generic "Can I request a custom design?" [ref=e1048] [cursor=pointer]
+          - group [ref=e1052]:
+            - generic "Do you handle fabrication and installation?" [ref=e1053] [cursor=pointer]
+          - group [ref=e1057]:
+            - generic "Can you integrate screens and interactive technology?" [ref=e1058] [cursor=pointer]
+          - group [ref=e1062]:
+            - generic "Do you work across different exhibition venues?" [ref=e1063] [cursor=pointer]
+          - group [ref=e1067]:
+            - generic "How long does production take?" [ref=e1068] [cursor=pointer]
+          - group [ref=e1072]:
+            - generic "Can the stall be reused for future events?" [ref=e1073] [cursor=pointer]
+          - group [ref=e1077]:
+            - generic "How do I get a quotation?" [ref=e1078] [cursor=pointer]
+    - generic [ref=e1083]:
+      - generic [ref=e1084]:
+        - paragraph [ref=e1086]: Request a quote
+        - heading "Let's plan your next expo." [level=2] [ref=e1088]: Let's plan yournext expo.
+        - paragraph [ref=e1089]: Tell us about your event and requirements, and we'll get back to you with a customised proposal.
+      - generic [ref=e1090]:
+        - generic [ref=e1091]:
+          - generic [ref=e1092]:
+            - generic [ref=e1093]: Name
+            - textbox "Name" [ref=e1094]:
+              - /placeholder: Name *
+          - generic [ref=e1095]:
+            - generic [ref=e1096]: Email
+            - textbox "Email" [ref=e1097]:
+              - /placeholder: Email *
+          - generic [ref=e1098]:
+            - generic [ref=e1099]: Phone
+            - textbox "Phone" [ref=e1100]:
+              - /placeholder: Phone *
+          - generic [ref=e1101]:
+            - generic [ref=e1102]: Expo name
+            - textbox "Expo name" [ref=e1103]:
+              - /placeholder: Expo name *
+          - generic [ref=e1104]:
+            - generic [ref=e1105]: Location
+            - textbox "Location" [ref=e1106]:
+              - /placeholder: Location *
+          - generic [ref=e1108]:
+            - generic [ref=e1109]: Event date (DD/MM/YYYY)
+            - textbox "Event date, format DD/MM/YYYY" [ref=e1110]:
+              - /placeholder: Event date * (DD/MM/YYYY)
+            - button "Choose event date from calendar" [ref=e1111]
+          - generic [ref=e1114]:
+            - generic [ref=e1115]: Stall dimensions
+            - textbox "Stall dimensions" [ref=e1116]:
+              - /placeholder: Stall dimensions *
+          - generic [ref=e1117]:
+            - generic [ref=e1118]: Budget range
+            - combobox "Budget range" [ref=e1119]:
+              - option "Budget range *" [disabled] [selected]
+              - option "Under ₹5 lakh"
+              - option "₹5–10 lakh"
+              - option "₹10–25 lakh"
+              - option "₹25 lakh+"
+          - generic [ref=e1120]:
+            - generic [ref=e1121]: Service
+            - combobox "Service" [ref=e1122]:
+              - option "Service *" [disabled] [selected]
+              - option "Exhibition Stalls"
+              - option "Event Setups"
+              - option "Custom Designs"
+              - option "Brand Experiences"
+          - generic [ref=e1123]:
+            - generic [ref=e1124]: Requirements
+            - textbox "Requirements" [ref=e1125]:
+              - /placeholder: Requirements *
+        - button "Request a quote" [ref=e1127]
+  - contentinfo [ref=e1130]:
+    - generic [ref=e1131]:
+      - generic [ref=e1132]:
+        - generic [ref=e1133]:
+          - link "Ikaslé StallX home" [ref=e1134] [cursor=pointer]:
+            - /url: /#home
+            - img "Ikaslé StallX" [ref=e1135]
+          - paragraph [ref=e1136]: Exhibition stalls. Memorable brand experiences.
+          - generic [ref=e1137]:
+            - link "Instagram" [ref=e1138] [cursor=pointer]:
+              - /url: https://www.instagram.com/
+            - link "LinkedIn" [ref=e1143] [cursor=pointer]:
+              - /url: https://www.linkedin.com/
+            - link "YouTube" [ref=e1146] [cursor=pointer]:
+              - /url: https://www.youtube.com/
+            - link "Facebook" [ref=e1149] [cursor=pointer]:
+              - /url: https://www.facebook.com/
+        - generic [ref=e1152]:
+          - heading "Links" [level=2] [ref=e1153]
+          - list [ref=e1154]:
+            - listitem [ref=e1155]:
+              - link "Home" [ref=e1156] [cursor=pointer]:
+                - /url: /#home
+            - listitem [ref=e1157]:
+              - link "About" [ref=e1158] [cursor=pointer]:
+                - /url: /#about
+            - listitem [ref=e1159]:
+              - link "Services" [ref=e1160] [cursor=pointer]:
+                - /url: /#services
+            - listitem [ref=e1161]:
+              - link "Contact" [ref=e1162] [cursor=pointer]:
+                - /url: /#contact
+        - generic [ref=e1163]:
+          - heading "Services" [level=2] [ref=e1164]
+          - list [ref=e1165]:
+            - listitem [ref=e1166]:
+              - link "Exhibition Stalls" [ref=e1167] [cursor=pointer]:
+                - /url: /#exhibition-stalls
+            - listitem [ref=e1170]:
+              - link "Event Setups" [ref=e1171] [cursor=pointer]:
+                - /url: /#event-setups
+            - listitem [ref=e1174]:
+              - link "Custom Designs" [ref=e1175] [cursor=pointer]:
+                - /url: /#custom-designs
+            - listitem [ref=e1178]:
+              - link "Brand Experiences" [ref=e1179] [cursor=pointer]:
+                - /url: /#brand-experiences
+        - generic [ref=e1182]:
+          - heading "Get in touch" [level=2] [ref=e1183]
+          - generic [ref=e1184]:
+            - link "businessgroupikasle@gmail.com" [ref=e1185] [cursor=pointer]:
+              - /url: mailto:businessgroupikasle@gmail.com
+            - link "+91 78451 32962" [ref=e1189] [cursor=pointer]:
+              - /url: tel:+917845132962
+            - generic [ref=e1192]: 1639/A, 2nd Floor, Hopes,Coimbatore, India – 641004
+      - generic [ref=e1198]:
+        - generic [ref=e1199]:
+          - paragraph [ref=e1200]: © 2026 Ikaslé StallX. All rights reserved.
+          - generic [ref=e1201]: •
+          - paragraph [ref=e1202]:
+            - text: Crafted by
+            - link "Ikasle Technologies" [ref=e1203] [cursor=pointer]:
+              - /url: https://ikasle.in
+        - navigation "Legal navigation" [ref=e1204]:
+          - link "Privacy Policy" [ref=e1205] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "FAQ" [ref=e1206] [cursor=pointer]:
+            - /url: /faq
+          - link "Terms & Conditions" [ref=e1207] [cursor=pointer]:
+            - /url: /terms-and-conditions
+  - complementary "Contact and navigation shortcuts" [ref=e1208]:
+    - generic [aria-hidden]:
+      - button:
+        - generic: Scroll to top
+    - link "Chat with StallX on WhatsApp (+91 78451 32962)" [ref=e1209] [cursor=pointer]:
+      - /url: https://wa.me/917845132962?text=Hello%20Ikasl%C3%A9%20StallX%2C%20I%20would%20like%20to%20plan%20an%20exhibition%20stall.
+      - generic: Chat on WhatsApp
+  - complementary "AI assistant" [ref=e1212]:
+    - button "Open StallX Assistant" [ref=e1214]:
+      - generic [ref=e1220]: Ask StallX AI
