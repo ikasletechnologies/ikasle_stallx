@@ -4,6 +4,7 @@ import { Home } from '@/pages/Home'
 import { PrivacyPolicy } from '@/pages/PrivacyPolicy'
 import { TermsAndConditions } from '@/pages/TermsAndConditions'
 import { FaqPage } from '@/pages/FaqPage'
+import { NotFoundPage } from '@/pages/NotFoundPage'
 import { useScrollReveal } from '@/hooks/useScrollReveal'
 import { FloatingActions } from '@/components/common/FloatingActions'
 import { PageLoader } from '@/components/common/PageLoader'
@@ -15,7 +16,7 @@ const pages: Record<string, React.ComponentType> = {
 }
 
 export function App() {
-  const Page = pages[window.location.pathname] ?? Home
+  const Page = window.location.pathname === '/' ? Home : pages[window.location.pathname] ?? NotFoundPage
   useScrollReveal()
 
   return (

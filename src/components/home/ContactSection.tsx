@@ -25,7 +25,7 @@ export const ContactSection: React.FC = () => {
 
     const email = String(data.get('email') ?? '').trim()
     const phone = String(data.get('phone') ?? '').trim()
-    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = 'Enter a valid email address.'
+    if (email && !/^[^\s@.]+(?:\.[^\s@.]+)*@(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)+[A-Za-z]{2,63}$/.test(email)) errors.email = 'Please enter a valid email address.'
     if (phone && !/^\d{10}$/.test(phone)) errors.phone = 'Enter a valid 10-digit phone number.'
     const eventDate = String(data.get('eventDate') ?? '').trim()
     if (eventDate && !/^\d{4}-\d{2}-\d{2}$/.test(eventDate)) errors.eventDate = 'Enter a valid date as DD/MM/YYYY.'
@@ -65,7 +65,7 @@ export const ContactSection: React.FC = () => {
   }
 
   return (
-      <section id="contact" className="px-4 sm:px-6 lg:px-8">
+      <section id="contact" className="scroll-mt-24 px-4 sm:px-6 lg:px-8">
         <div data-reveal="rise-scale" className="relative mx-auto max-w-[1380px] overflow-hidden rounded-xl bg-gradient-to-br from-[#092944] via-[#08243b] to-[#061d32] px-6 py-8 text-white shadow-xl sm:px-10 lg:grid lg:grid-cols-[42%_58%] lg:gap-10 lg:px-12">
           <div className="relative border-white/45 pb-10 lg:border-r lg:pb-0 lg:pr-12">
             <div className="flex items-center gap-3">
@@ -153,6 +153,7 @@ export const ContactSection: React.FC = () => {
                   <option>Event Setups</option>
                   <option>Custom Designs</option>
                   <option>Brand Experiences</option>
+                  <option>Photography &amp; Videography</option>
                 </select>
                 {formErrors.service && <span className="mt-1 block text-xs text-red-300">{formErrors.service}</span>}
               </label>

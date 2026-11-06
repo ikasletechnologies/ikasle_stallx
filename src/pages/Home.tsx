@@ -5,6 +5,7 @@ import {
   FaqSection,
   GroupCompaniesSection,
   HeroSection,
+  PhotographySection,
   ServicesSection,
   TestimonialsSection,
 } from '@/components/home'
@@ -15,6 +16,7 @@ export const Home = () => (
     <AboutSection />
     <ServicesSection />
     <CustomSolutionsBanner />
+    <PhotographySection />
     <GroupCompaniesSection />
     <TestimonialsSection />
     <FaqSection />

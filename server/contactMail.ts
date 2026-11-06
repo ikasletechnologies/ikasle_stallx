@@ -44,7 +44,7 @@ const BUDGETS: Record<string, string> = {
   '10l-25l': '₹10–25 lakh',
   '25l-plus': '₹25 lakh+',
 }
-const SERVICES = ['Exhibition Stalls', 'Event Setups', 'Custom Designs', 'Brand Experiences']
+const SERVICES = ['Exhibition Stalls', 'Event Setups', 'Custom Designs', 'Brand Experiences', 'Photography & Videography']
 
 const BUSINESS = {
   name: 'Ikaslé StallX',
@@ -94,7 +94,7 @@ export const validateSubmission = (body: unknown): { data: ContactSubmission; er
 
   const errors: Record<string, string> = {}
   for (const [field, value] of Object.entries(data)) if (!value) errors[field] = 'This field is required.'
-  if (data.email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(data.email)) errors.email = 'Enter a valid email address.'
+  if (data.email && !/^[^\s@.]+(?:\.[^\s@.]+)*@(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)+[A-Za-z]{2,63}$/.test(data.email)) errors.email = 'Please enter a valid email address.'
   if (data.phone && !/^\d{10}$/.test(data.phone)) errors.phone = 'Enter a valid 10-digit phone number.'
   if (data.eventDate && (!/^\d{4}-\d{2}-\d{2}$/.test(data.eventDate) || Number.isNaN(Date.parse(data.eventDate)))) errors.eventDate = 'Enter a valid date as DD/MM/YYYY.'
   else if (data.eventDate && data.eventDate < new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString().slice(0, 10)) errors.eventDate = 'The event date cannot be in the past.'

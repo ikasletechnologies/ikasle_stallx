@@ -112,7 +112,7 @@ export const DateField: React.FC<DateFieldProps> = ({ name, label, placeholder =
         tabIndex={-1}
         aria-hidden="true"
         min={todayIso()}
-        onChange={(event) => event.target.value && update(isoToDisplay(event.target.value))}
+        onChange={(event) => update(event.target.value ? isoToDisplay(event.target.value) : '')}
         className="pointer-events-none absolute bottom-0 right-0 h-0 w-0 opacity-0"
       />
     </div>

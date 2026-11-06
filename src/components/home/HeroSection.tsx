@@ -35,10 +35,9 @@ const heroCards: HeroCard[] = [
 ]
 
 export const HeroSection: React.FC = () => (
-  <section id="home" className="relative isolate min-h-[700px] overflow-hidden bg-[#061f3b] text-white">
+  <section id="home" className="scroll-mt-24 relative isolate min-h-[700px] overflow-hidden bg-[#061f3b] text-white">
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_82%_18%,rgba(40,106,181,.55),transparent_34%),radial-gradient(circle_at_60%_65%,rgba(241,90,36,.2),transparent_32%),linear-gradient(135deg,#04182d_0%,#082e59_55%,#064786_100%)]" />
     <div className="pointer-events-none absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)] bg-[size:72px_72px]" />
-    <div className="pointer-events-none absolute left-[43%] top-24 hidden text-5xl font-light text-white/40 lg:block">×</div>
 
     <div className="relative z-10 mx-auto grid min-h-[700px] max-w-[1440px] grid-cols-1 items-center gap-12 px-6 pb-32 pt-16 sm:px-10 lg:grid-cols-[47%_53%] lg:px-16 lg:pb-36">
       <div className="relative z-20" data-reveal-stagger="slide-right">
@@ -47,7 +46,7 @@ export const HeroSection: React.FC = () => (
           Exhibition experiences 2026
         </div>
 
-        <h1 className="text-[51px] font-black leading-[0.92] tracking-[-0.05em] sm:text-[68px] xl:text-[78px]">
+        <h1 className="text-[51px] font-black leading-[1.08] tracking-[-0.05em] sm:text-[68px] xl:text-[78px]">
           Big ideas.
           <br />
           <span className="font-medium text-white">Bold spaces.</span>

@@ -4,7 +4,7 @@ import { services } from '@/data/services'
 import { ServiceIllustration } from './ServiceIllustrations'
 
 export const ServicesSection: React.FC = () => (
-  <section id="services" className="scroll-mt-[74px] bg-[#f8f6f1] px-4 py-4 sm:px-6 lg:px-8">
+  <section id="services" className="scroll-mt-24 bg-[#f8f6f1] px-4 py-4 sm:px-6 lg:px-8">
     <div className="mx-auto max-w-[1380px]">
       <div className="mb-7" data-reveal="fade-up">
         <div className="flex items-center gap-3">
@@ -21,7 +21,7 @@ export const ServicesSection: React.FC = () => (
         {services.map((service, index) => {
           const ServiceIcon = service.icon
           return (
-            <article key={service.id} id={service.id} data-reveal={index % 2 === 0 ? 'slide-right' : 'slide-left'} className="scroll-mt-[90px] group/service overflow-visible rounded-2xl border border-[#cfd3d5] bg-white/55 shadow-sm transition hover:border-[#f15a24]/60 hover:shadow-lg">
+            <article key={service.id} id={service.id} data-reveal={index % 2 === 0 ? 'slide-right' : 'slide-left'} className="scroll-mt-24 group/service overflow-hidden rounded-2xl border border-[#cfd3d5] bg-white/55 shadow-sm transition hover:border-[#f15a24]/60 hover:shadow-lg">
               <div className="grid overflow-visible rounded-2xl lg:grid-cols-[240px_300px_1fr]">
                 <ServiceIllustration serviceId={service.id} className="h-52 overflow-hidden rounded-t-2xl lg:h-full lg:min-h-[245px] lg:rounded-l-2xl lg:rounded-tr-none" />
 

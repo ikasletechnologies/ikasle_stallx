@@ -2,7 +2,7 @@ import React from 'react'
 import { AboutIllustration } from './AboutIllustration'
 
 export const AboutSection: React.FC = () => (
-      <section id="about" className="overflow-hidden bg-[#f8f6f1]">
+      <section id="about" className="scroll-mt-24 overflow-hidden bg-[#f8f6f1]">
         <div className="mx-auto grid max-w-[1440px] lg:grid-cols-[43%_17%_40%]">
           <div className="flex min-h-[350px] items-center px-6 py-12 sm:px-10 lg:px-14 xl:px-16">
             <div data-reveal-stagger="mask-up">

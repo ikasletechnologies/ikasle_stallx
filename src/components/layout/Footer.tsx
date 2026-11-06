@@ -136,9 +136,9 @@ export const Footer: React.FC = () => (
             <p className="text-xs sm:text-sm text-[#b8d1e3]">
               Crafted by{' '}
               <a
-                href="https://ikasle.in"
+                href="https://ikasleinnovations.com/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="font-semibold text-white transition hover:text-[#ff7a00]"
               >
                 Ikasle Technologies

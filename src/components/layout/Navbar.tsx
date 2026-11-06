@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { ArrowRight, ChevronDown, ChevronRight, Menu, X } from 'lucide-react'
 import logoImg from '@/assets/stallX.png'
 import { services } from '@/data/services'
@@ -6,19 +6,62 @@ import { services } from '@/data/services'
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
+  const [activeServiceId, setActiveServiceId] = useState<string | null>(null)
   const [mobileServiceOpen, setMobileServiceOpen] = useState<string | null>(null)
-  const [activeServiceId, setActiveServiceId] = useState(services[0].id)
-  const activeService = services.find((service) => service.id === activeServiceId) ?? services[0]
+  const servicesButtonRef = useRef<HTMLButtonElement>(null)
+  const dropdownCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const submenuCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const activeService = services.find((service) => service.id === activeServiceId)
+
+  const clearTimer = (timer: React.MutableRefObject<ReturnType<typeof setTimeout> | null>) => {
+    if (timer.current) clearTimeout(timer.current)
+    timer.current = null
+  }
+
+  useEffect(() => () => {
+    clearTimer(dropdownCloseTimer)
+    clearTimer(submenuCloseTimer)
+  }, [])
+
+  const openServices = () => {
+    clearTimer(dropdownCloseTimer)
+    setServicesOpen(true)
+  }
 
   const closeServices = () => {
+    clearTimer(dropdownCloseTimer)
+    clearTimer(submenuCloseTimer)
     setServicesOpen(false)
-    setActiveServiceId(services[0].id)
+    setActiveServiceId(null)
+  }
+
+  const scheduleServicesClose = () => {
+    clearTimer(dropdownCloseTimer)
+    dropdownCloseTimer.current = setTimeout(closeServices, 180)
+  }
+
+  const showSubmenu = (serviceId: string) => {
+    clearTimer(submenuCloseTimer)
+    setActiveServiceId(serviceId)
+  }
+
+  const scheduleSubmenuClose = () => {
+    clearTimer(submenuCloseTimer)
+    submenuCloseTimer.current = setTimeout(() => setActiveServiceId(null), 140)
   }
 
   const closeMenus = () => {
     setIsOpen(false)
     setServicesOpen(false)
+    setActiveServiceId(null)
     setMobileServiceOpen(null)
+  }
+
+  const handleServicesKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (event.key !== 'Escape') return
+    event.preventDefault()
+    closeServices()
+    servicesButtonRef.current?.focus()
   }
 
   return (
@@ -32,28 +75,40 @@ export const Navbar: React.FC = () => {
           <a href="/#home" className="relative py-6 text-sm font-bold text-[#071c31] transition-colors hover:text-[#f15a24] after:absolute after:inset-x-0 after:bottom-[13px] after:h-[3px] after:rounded-full after:bg-[#f15a24]">Home</a>
           <a href="/#about" className="py-6 text-sm font-bold text-[#071c31] transition-colors hover:text-[#f15a24]">About</a>
 
-          <div className="group relative" onMouseLeave={closeServices}>
+          <div
+            className="relative"
+            onMouseEnter={openServices}
+            onMouseLeave={scheduleServicesClose}
+            onFocus={openServices}
+            onBlur={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget as Node | null)) scheduleServicesClose()
+            }}
+            onKeyDown={handleServicesKeyDown}
+          >
             <button
+              ref={servicesButtonRef}
               type="button"
-              onClick={() => setServicesOpen((open) => !open)}
+              onClick={() => (servicesOpen ? closeServices() : openServices())}
               className="flex h-[74px] items-center gap-1.5 text-sm font-bold text-[#071c31] transition-colors hover:text-[#f15a24]"
               aria-expanded={servicesOpen}
               aria-haspopup="true"
             >
               Services
-              <ChevronDown className={`h-4 w-4 transition-transform ${servicesOpen ? 'rotate-180' : 'group-hover:rotate-180'}`} />
+              <ChevronDown className={`h-4 w-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
             </button>
 
-            <div className={`absolute left-1/2 top-full flex -translate-x-1/2 items-start gap-2 pt-1 transition-all duration-200 ${servicesOpen ? 'visible translate-y-0 opacity-100' : 'invisible -translate-y-2 opacity-0 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100'}`}>
+            <div className={`absolute left-1/2 top-full w-[280px] -translate-x-1/2 pt-1 transition-all duration-200 ${servicesOpen ? 'visible translate-y-0 opacity-100' : 'invisible -translate-y-2 opacity-0'}`}>
               <ul className="w-[280px] space-y-1 rounded-2xl border border-slate-200 bg-white p-3 shadow-[0_18px_50px_rgba(7,28,49,.14)]">
                 {services.map((service) => {
-                  const isActive = service.id === activeService.id
+                  const isActive = service.id === activeServiceId
                   return (
                     <li key={service.id}>
                       <a
                         href={`/#${service.id}`}
-                        onMouseEnter={() => setActiveServiceId(service.id)}
-                        onFocus={() => setActiveServiceId(service.id)}
+                        onMouseEnter={() => showSubmenu(service.id)}
+                        onMouseLeave={scheduleSubmenuClose}
+                        onFocus={() => showSubmenu(service.id)}
+                        onBlur={scheduleSubmenuClose}
                         onClick={closeServices}
                         className={`flex items-center justify-between rounded-xl px-4 py-3.5 text-sm font-bold transition ${isActive ? 'bg-[#fff1e9] text-[#f15a24]' : 'text-[#071c31] hover:bg-slate-50'}`}
                       >
@@ -65,22 +120,27 @@ export const Navbar: React.FC = () => {
                 })}
               </ul>
 
-              <div className="w-[320px] rounded-2xl border border-slate-200 bg-white p-3 shadow-[0_18px_50px_rgba(7,28,49,.14)]">
-                <p className="mx-2 border-b border-slate-200 pb-3 pt-2 text-xs font-extrabold uppercase tracking-[0.14em] text-[#f15a24]">{activeService.title}</p>
-                <ul className="mt-2 space-y-0.5">
-                  {activeService.topics.map((topic) => (
-                    <li key={topic.title}>
-                      <a href={`/#${activeService.id}`} onClick={closeServices} className="block rounded-lg px-2 py-2.5 text-[13px] font-semibold text-[#2a3b4c] transition hover:bg-[#fff4ec] hover:pl-3 hover:text-[#f15a24]">
-                        {topic.title}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-                <a href={`/#${activeService.id}`} onClick={closeServices} className="mt-2 flex items-center justify-between rounded-lg bg-[#071c31] px-3 py-2.5 text-xs font-bold text-white transition hover:bg-[#f15a24]">
-                  Explore {activeService.title}
-                  <ArrowRight className="h-4 w-4" />
-                </a>
-              </div>
+              {activeService && (
+                <div
+                  className="absolute left-[288px] top-1 w-[320px] rounded-2xl border border-slate-200 bg-white p-3 shadow-[0_18px_50px_rgba(7,28,49,.14)]"
+                  onMouseEnter={() => showSubmenu(activeService.id)}
+                  onMouseLeave={scheduleSubmenuClose}
+                  onFocus={() => showSubmenu(activeService.id)}
+                  onBlur={(event) => {
+                    if (!event.currentTarget.contains(event.relatedTarget as Node | null)) scheduleSubmenuClose()
+                  }}
+                >
+                  <ul className="space-y-0.5">
+                    {activeService.topics.map((topic) => (
+                      <li key={topic.title}>
+                        <a href={`/#${activeService.id}`} onClick={closeServices} className="block rounded-lg px-2 py-2.5 text-[13px] font-semibold text-[#2a3b4c] transition hover:bg-[#fff4ec] hover:pl-3 hover:text-[#f15a24]">
+                          {topic.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
 
@@ -98,7 +158,7 @@ export const Navbar: React.FC = () => {
       </div>
 
       {isOpen && (
-        <div className="border-t border-slate-200 bg-white px-5 py-4 md:hidden">
+        <div className="border-t border-slate-200 bg-white px-5 py-4 md:hidden" onKeyDown={(event) => event.key === 'Escape' && closeMenus()}>
           <nav className="flex flex-col gap-1" aria-label="Mobile navigation">
             <a href="/#home" onClick={closeMenus} className="rounded-md px-3 py-3 text-sm font-bold text-[#071c31] hover:bg-orange-50 hover:text-[#f15a24]">Home</a>
             <a href="/#about" onClick={closeMenus} className="rounded-md px-3 py-3 text-sm font-bold text-[#071c31] hover:bg-orange-50 hover:text-[#f15a24]">About</a>
