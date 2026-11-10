@@ -3,7 +3,11 @@ import { ArrowRight, ChevronDown, ChevronRight, Menu, X } from 'lucide-react'
 import logoImg from '@/assets/stallX.png'
 import { services } from '@/data/services'
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+  isHome?: boolean
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ isHome = true }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
   const [activeServiceId, setActiveServiceId] = useState<string | null>(null)
@@ -72,7 +76,7 @@ export const Navbar: React.FC = () => {
         </a>
 
         <nav className="hidden items-center gap-12 md:flex" aria-label="Main navigation">
-          <a href="/#home" className="relative py-6 text-sm font-bold text-[#071c31] transition-colors hover:text-[#f15a24] after:absolute after:inset-x-0 after:bottom-[13px] after:h-[3px] after:rounded-full after:bg-[#f15a24]">Home</a>
+          <a href="/#home" className={`relative py-6 text-sm font-bold text-[#071c31] transition-colors hover:text-[#f15a24] ${isHome ? 'after:absolute after:inset-x-0 after:bottom-[13px] after:h-[3px] after:rounded-full after:bg-[#f15a24]' : ''}`}>Home</a>
           <a href="/#about" className="py-6 text-sm font-bold text-[#071c31] transition-colors hover:text-[#f15a24]">About</a>
 
           <div

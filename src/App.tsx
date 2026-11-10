@@ -15,14 +15,21 @@ const pages: Record<string, React.ComponentType> = {
   '/faq': FaqPage,
 }
 
+const normalizePathname = (pathname: string) => {
+  const trimmed = pathname.replace(/\/+$/, '') || '/'
+  return trimmed === '/index.html' ? '/' : trimmed
+}
+
 export function App() {
-  const Page = window.location.pathname === '/' ? Home : pages[window.location.pathname] ?? NotFoundPage
+  const pathname = normalizePathname(window.location.pathname)
+  const isHome = pathname === '/'
+  const Page = isHome ? Home : Object.hasOwn(pages, pathname) ? pages[pathname] : NotFoundPage
   useScrollReveal()
 
   return (
     <div className="min-h-screen flex flex-col bg-cream-100 text-navy-900 selection:bg-brand-500 selection:text-white">
       <PageLoader />
-      <Navbar />
+      <Navbar isHome={isHome} />
       <div className="flex-1">
         <Page />
       </div>
