@@ -10,12 +10,11 @@ interface GroupCompany {
 
 // Replace these placeholders with the real group companies.
 const companies: GroupCompany[] = [
-  { name: 'Company one', website: '#contact' },
-  { name: 'Company two', website: '#contact' },
-  { name: 'Company three', website: '#contact' },
-  { name: 'Company four', website: '#contact' },
-  { name: 'Company five', website: '#contact' },
-  { name: 'Company six', website: '#contact' },
+  { name: 'Ikasle Technologies', website: '#contact', logo: '/images/companylogo/company1.webp' },
+  { name: 'Ikasle printhub', website: '#contact', logo: '/images/companylogo/company2.png' },
+  { name: 'Ikasle Simplify', website: '#contact', logo: '/images/companylogo/company3.png' },
+  { name: 'Ikasle Marketing', website: '#contact', logo: '/images/companylogo/company4.png' },
+
 ]
 
 const AUTOPLAY_MS = 3500

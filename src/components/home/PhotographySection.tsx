@@ -3,7 +3,7 @@ import { ArrowUpRight, Camera, Layers3, Video } from 'lucide-react'
 import exhibitionCoverage from '@/assets/photography/exhibition-coverage.jpg'
 import eventCoverage from '@/assets/photography/event-coverage.jpg'
 import designShowcase from '@/assets/photography/design-showcase.jpg'
-import brandContent from '@/assets/photography/brand-content.jpg'
+import brandContent from '@/assets/photography/brand-content0.png'
 
 type IconProps = { className?: string; strokeWidth?: number }
 
